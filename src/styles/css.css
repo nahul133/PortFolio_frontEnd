@@ -1,0 +1,523 @@
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url('../assets/banner-1.jpg');
+
+    animation: banner 20s infinite linear;
+}
+
+
+.banner-content{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(246,221,237);
+    background: linear-gradient(318deg, rgba(246,221,237,0.4654236694677871) 0%, rgba(58,61,238,0.7175245098039216) 100%);   
+}
+
+@keyframes banner {
+    0% {
+        background-image: url('../assets/banner-1.jpg');
+    }
+    25% {
+        background-image: url('../assets/banner-1.jpg');
+    }
+    26%{
+        background-image: url('../assets/banner-2.jpg');
+    }
+    50%{
+        background-image: url('../assets/banner-2.jpg');
+    }
+    51%{
+        background-image: url('../assets/banner-3.jpg');
+    }
+    75%{
+        background-image: url('../assets/banner-3.jpg');
+    }
+    76%{
+        background-image: url('../assets/banner-4.jpg');
+    }
+    100%{
+        background-image: url('../assets/banner-4.jpg');
+    }
+}
+
+
+.contenedor {
+    position: relative;
+    top: 60px; 
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+
+
+.contenedor h2 {
+    margin-bottom: 2.8rem;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.553);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}   
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.circulo {
+    width: auto;
+    height: auto;
+    background-color: #0062ff;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+    
+}
+
+.circulo:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.boton {
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #0062ff;
+    margin-top: 3rem;
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #0062ff57;
+}
+
+.contenedor-maquina {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+
+.sobre-mi {
+    height: 600px;
+    padding: 50px 5px;
+}
+
+.sobre-mi h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(81, 80, 80);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.contenedor-sobre-mi {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 900px) {
+    .contenedor-sobre-mi {
+        flex-direction: row;
+        padding-bottom: 0;
+        gap: 5rem;
+    }
+}
+
+.circulo-xl {
+    width: auto;
+    height: auto;
+    background-color: #3174e0d3;
+    border-radius: 100%;
+    padding: 5rem;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+}
+
+
+.sobre-mi-texto {
+    width: 25rem;
+    height: 25rem;
+    font-size: 1rem;
+}
+
+
+.sobre-mi-texto h2 {
+    color: rgba(34, 33, 33, 0.824);
+    margin-top: 1.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.sobre-mi-texto p {
+    color: rgba(36, 36, 36, 0.898);
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 3rem;
+    row-gap: 0.7rem;
+}
+
+.habilidades div {
+    background-color: rgba(0, 0, 0, 0.078);
+    padding: 7px 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.habilidades span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: black;
+}
+
+
+.sobre-mi-texto a {
+    margin-top: 2rem;
+    background: rgb(173,65,116);
+    background: linear-gradient(318deg, rgba(173,65,116,0.4654236694677871) 0%, rgba(67,13,242,0.7091211484593838) 100%);
+    color: white;
+    border: none;
+    font-weight: 400;
+    padding: 15px 10px;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+}
+
+
+
+.proyectos {
+    background-color: #005ff88c;
+    height: 950px;
+    padding: 50px 5px;
+    margin-top: 30rem;
+}
+
+
+@media (min-width: 900px) {
+    .proyectos {
+        margin-top: 1rem;
+        height: 1000px;
+    }
+}
+
+
+.proyectos h1 {
+    color: white;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.proyectos span {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    height: 800px;
+    overflow-y: scroll;
+}
+
+@media (min-width: 900px) {
+    .contenedor-proyectos {
+        height: auto;
+        overflow-y: visible;
+    }
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 5rem;
+    /* grid-template-columns: repeat(2,1fr); */
+    column-gap: 5rem;
+    height: 800px;
+}
+
+@media (min-width: 900px) {
+    .contenedor-grid {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .contenedor-grid {
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 10rem;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 5rem;
+    }
+}
+
+
+.contenedor-grid a {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .contenedor-grid a {
+        /* display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        border: 2px solid rgba(255, 255, 255, 0.441);
+        border-left: 0px solid rgba(0, 0, 0, 0.004);
+        box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 6px;
+        background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 20px,
+      rgba(0, 0, 0, 0) 40px,
+      #ffffff28 40px,
+      #0c5ddf73
+    );
+    }
+}
+
+
+.contenedor-grid img {
+   max-width: 300px;
+   max-height: 300px;
+   background-position: center;
+   background-size:cover;
+   border: 2px solid rgba(255, 255, 255, 0.63); 
+
+   transition: 0.7s all ease-in-out;
+  
+}
+
+
+@media (min-width: 900px) {
+    .contenedor-grid img:hover {
+        transform: scale(1.2, 5);
+    }
+}
+
+
+.contenedor-grid img:hover {
+    transform: scale(1.2,1.2);
+}
+
+
+@media (min-width: 900px) {
+    .contenedor-grid img:hover {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+.educacion {
+    background-color: white;
+    height: 500px;
+    padding: 50px 5px;
+}
+
+@media (min-width: 900px) {
+    .educacion{
+        height: 300px;
+    }
+}
+
+
+.educacion h1 {
+    color: rgba(34, 33, 33, 0.824);
+    font-weight: 700;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-top: 2.5rem;
+}
+
+.educacion p {
+    text-align: center;
+    margin-top: 1.8rem;
+    font-size: 1.2rem;
+}
+
+
+.contacto {
+    background-color: #005ff88c;
+    height: 700px;
+    padding: 150px 5px;
+}
+
+.contacto h1 {
+    color: white;
+    font-weight: 700;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 2.3rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-contacto p{
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+.formulario-contacto input {
+    padding: 17px 10px;
+    border-radius: 0.375rem;
+    border: 0.1px solid white;
+    background-color: transparent;
+    outline: none;
+    width: 400px;
+    color: white;
+}
+
+@media (min-width:480px) {
+    .formulario-contacto input {
+        width: auto;
+    }
+}
+
+.formulario-contacto input::placeholder {
+    color: white;
+}
+
+.formulario-contacto textarea {
+    padding: 17px 10px;
+    border-radius: 0.375rem;
+    border: 0.1px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 80px;
+    width: 400px;
+    color: white;
+}
+
+@media (min-width:480px) {
+    .formulario-contacto textarea {
+        width: auto;
+    }
+}
+
+.formulario-contacto textarea::placeholder {
+    color: white;
+}
+
+.boton-formulario {
+    width: 100px;
+    border: 0.1px solid white;
+    padding: 12px 10px;
+    border-radius: 0.375rem;
+    border: 0.1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.1s all ease-in-out;
+}
+
+.boton-formulario:hover {
+    background-color: white;
+    color: #005ff88c;
+    font-weight: 700;
+}
+
+.disabled:hover {
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    cursor: default;
+}
+
+
+.focus:focus {
+    background-color: #005ff82d;
+
+    transition: 0.5s all ease-in-out;
+    color: white;
+}
+
+
+
+
